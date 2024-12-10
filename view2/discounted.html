@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaffCoz - All Perfumes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">SaffCoz</div>
+        <ul class="navbar-menu">
+            <li>
+                <a href="home.html">
+                    <img src="../source/icons/home-svgrepo-com.svg" class="menu-icon"> Home
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#">
+                    <img src="../source/icons/perfume-2-svgrepo-com.svg" alt="Products" class="menu-icon"> Products
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="all.html">All</a></li>
+                    <li><a href="newest.html">Newest</a></li>
+                    <li><a href="discounted.html">Discounted</a></li>
+                    <li><a href="best.html">Best Seller</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">
+                    <img src="../source/icons/about-filled-svgrepo-com.svg" alt="About" class="menu-icon"> About
+                </a>
+            </li>
+            <li>
+                <a href="store.html">
+                    <img src="../source/icons/store-svgrepo-com.svg" alt="Stores" class="menu-icon"> Stores
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img src="../source/icons/contact-book-svgrepo-com.svg" alt="Contact" class="menu-icon"> Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="../source/images/acqua_di_gio.jpg" alt="Acqua Di Gio">
+            <div class="product-details">
+                <div class="product-name">Acqua Di Gio</div>
+                <div class="product-description">A fresh aquatic fragrance for men.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Toilette</div>
+                <div class="product-notes">Fragrance Notes: Jasmine, Bergamot, Mandarin.</div>
+                <button class="view-details" onclick="showDetails('Acqua Di Gio', 'A fresh aquatic fragrance for men.', '100ml', 'Eau de Toilette', 'Jasmine, Bergamot, Mandarin', '../source/images/acqua_di_gio.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/chanel_no5.jpg" alt="Chanel No. 5">
+            <div class="product-details">
+                <div class="product-name">Chanel No. 5</div>
+                <div class="product-description">The classic and timeless scent.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Aldehydes, Jasmine, Sandalwood.</div>
+                <button class="view-details" onclick="showDetails('Chanel No. 5', 'The classic and timeless scent.', '100ml', 'Eau de Parfum', 'Aldehydes, Jasmine, Sandalwood.', '../source/images/chanel_no5.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/chergui.jpg" alt="Chergui">
+            <div class="product-details">
+                <div class="product-name">Chergui</div>
+                <div class="product-description">A warm and spicy fragrance for both genders.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Tobacco, Honey, Iris.</div>
+                <button class="view-details" onclick="showDetails('Chergui', 'A warm and spicy fragrance for both genders.', '100ml', 'Eau de Parfum', 'Tobacco, Honey, Iris.', '../source/images/chergui.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/gucci_bloom.jpg" alt="Gucci Bloom">
+            <div class="product-details">
+                <div class="product-name">Gucci Bloom</div>
+                <div class="product-description">A floral fragrance that embodies the spirit of a blooming garden.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Jasmine, Tuberose, Rangoon Creeper.</div>
+                <button class="view-details" onclick="showDetails('Gucci Bloom', 'A floral fragrance that embodies the spirit of a blooming garden.', '100ml', 'Eau de Parfum', 'Jasmine, Tuberose, Rangoon Creeper.', '../source/images/gucci_bloom.jpg')">View Details</button>
+            </div>
+        </div>
+    </div>
+
+ <!-- Modal for displaying details -->
+ <div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalProductName"></h2>
+        <img id="modalProductImage" src="" alt="Product Image">
+        <p><strong>Description:</strong> <span id="modalProductDescription"></span></p>
+        <p><strong>Size:</strong> <span id="modalProductSize"></span></p>
+        <p><strong>Type:</strong> <span id="modalProductType"></span></p>
+        <p><strong>Fragrance Notes:</strong> <span id="modalProductNotes"></span></p>
+    </div>
+</div>
+
+    <!-- <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SaffCoz. All rights reserved.</p>
+        </div>
+    </footer> -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Explore the essence of elegance and charm with SaffCoz, where every fragrance tells a story.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SaffCoz. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank"><img src="../source/icons/facebook-color-svgrepo-com.svg" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../source/icons/instagram-1-svgrepo-com.svg" alt="Instagram" class="social-icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../source/icons/twitter-color-svgrepo-com.svg" alt="Twitter" class="social-icon"></a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaffCoz - All Perfumes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">SaffCoz</div>
+        <ul class="navbar-menu">
+            <li>
+                <a href="home.html">
+                    <img src="../source/icons/home-svgrepo-com.svg" class="menu-icon"> Home
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#">
+                    <img src="../source/icons/perfume-2-svgrepo-com.svg" alt="Products" class="menu-icon"> Products
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="all.html">All</a></li>
+                    <li><a href="newest.html">Newest</a></li>
+                    <li><a href="discounted.html">Discounted</a></li>
+                    <li><a href="best.html">Best Seller</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">
+                    <img src="../source/icons/about-filled-svgrepo-com.svg" alt="About" class="menu-icon"> About
+                </a>
+            </li>
+            <li>
+                <a href="store.html">
+                    <img src="../source/icons/store-svgrepo-com.svg" alt="Stores" class="menu-icon"> Stores
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <img src="../source/icons/contact-book-svgrepo-com.svg" alt="Contact" class="menu-icon"> Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="../source/images/acqua_di_gio.jpg" alt="Acqua Di Gio">
+            <div class="product-details">
+                <div class="product-name">Acqua Di Gio</div>
+                <div class="product-description">A fresh aquatic fragrance for men.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Toilette</div>
+                <div class="product-notes">Fragrance Notes: Jasmine, Bergamot, Mandarin.</div>
+                <button class="view-details" onclick="showDetails('Acqua Di Gio', 'A fresh aquatic fragrance for men.', '100ml', 'Eau de Toilette', 'Jasmine, Bergamot, Mandarin', '../source/images/acqua_di_gio.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/chanel_no5.jpg" alt="Chanel No. 5">
+            <div class="product-details">
+                <div class="product-name">Chanel No. 5</div>
+                <div class="product-description">The classic and timeless scent.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Aldehydes, Jasmine, Sandalwood.</div>
+                <button class="view-details" onclick="showDetails('Chanel No. 5', 'The classic and timeless scent.', '100ml', 'Eau de Parfum', 'Aldehydes, Jasmine, Sandalwood.', '../source/images/chanel_no5.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/chergui.jpg" alt="Chergui">
+            <div class="product-details">
+                <div class="product-name">Chergui</div>
+                <div class="product-description">A warm and spicy fragrance for both genders.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Tobacco, Honey, Iris.</div>
+                <button class="view-details" onclick="showDetails('Chergui', 'A warm and spicy fragrance for both genders.', '100ml', 'Eau de Parfum', 'Tobacco, Honey, Iris.', '../source/images/chergui.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/Creed_Aventus.jpg" alt="Creed Aventus">
+            <div class="product-details">
+                <div class="product-name">Creed Aventus</div>
+                <div class="product-description">A bold and masculine fragrance.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Pineapple, Birch, Musk.</div>
+                <button class="view-details" onclick="showDetails('Creed Aventus', 'A bold and masculine fragrance.', '100ml', 'Eau de Parfum', 'Pineapple, Birch, Musk.', '../source/images/Creed_Aventus.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/dior_sauvage.jpg" alt="Dior Sauvage">
+            <div class="product-details">
+                <div class="product-name">Dior Sauvage</div>
+                <div class="product-description">A powerful and fresh scent.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Toilette</div>
+                <div class="product-notes">Fragrance Notes: Bergamot, Ambroxan, Pepper.</div>
+                <button class="view-details" onclick="showDetails('Dior Sauvage', 'A powerful and fresh scent.', '100ml', 'Eau de Toilette', 'Bergamot, Ambroxan, Pepper.', '../source/images/dior_sauvage.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/gucci_bloom.jpg" alt="Gucci Bloom">
+            <div class="product-details">
+                <div class="product-name">Gucci Bloom</div>
+                <div class="product-description">A floral fragrance that embodies the spirit of a blooming garden.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Jasmine, Tuberose, Rangoon Creeper.</div>
+                <button class="view-details" onclick="showDetails('Gucci Bloom', 'A floral fragrance that embodies the spirit of a blooming garden.', '100ml', 'Eau de Parfum', 'Jasmine, Tuberose, Rangoon Creeper.', '../source/images/gucci_bloom.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/interlude_man.jpg" alt="Interlude Man">
+            <div class="product-details">
+                <div class="product-name">Interlude Man</div>
+                <div class="product-description">A smoky and aromatic scent.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Amber, Leather, Smoke.</div>
+                <button class="view-details" onclick="showDetails('Interlude Man', 'A smoky and aromatic scent.', '100ml', 'Eau de Parfum', 'Amber, Leather, Smoke.', '../source/images/interlude_man.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/la_nuit_de_lhomme.jpg" alt="La Nuit De L'Homme">
+            <div class="product-details">
+                <div class="product-name">La Nuit De L'Homme</div>
+                <div class="product-description">An elegant and sensual fragrance.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Toilette</div>
+                <div class="product-notes">Fragrance Notes: Cardamom, Cedar, Lavender.</div>
+                <button class="view-details" onclick="showDetails('La Nuit De L\'Homme', 'An elegant and sensual fragrance.', '100ml', 'Eau de Toilette', 'Cardamom, Cedar, Lavender.', '../source/images/la_nuit_de_lhomme.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/lavieestbelle.jpg" alt="La Vie Est Belle">
+            <div class="product-details">
+                <div class="product-name">La Vie Est Belle</div>
+                <div class="product-description">A joyful and sweet fragrance.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Iris, Patchouli, Sweet Notes.</div>
+                <button class="view-details" onclick="showDetails('La Vie Est Belle', 'A joyful and sweet fragrance.', '100ml', 'Eau de Parfum', 'Iris, Patchouli, Sweet Notes.', '../source/images/lavieestbelle.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/oud_for_greatness.jpg" alt="Oud For Greatness">
+            <div class="product-details">
+                <div class="product-name">Oud For Greatness</div>
+                <div class="product-description">A rich and opulent oud fragrance.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Oud, Saffron, Patchouli.</div>
+                <button class="view-details" onclick="showDetails('Oud For Greatness', 'A rich and opulent oud fragrance.', '100ml', 'Eau de Parfum', 'Oud, Saffron, Patchouli.', '../source/images/oud_for_greatness.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/tom_ford_noir.jpg" alt="Tom Ford Noir">
+            <div class="product-details">
+                <div class="product-name">Tom Ford Noir</div>
+                <div class="product-description">A sophisticated and sensual fragrance.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Bergamot, Violet Flower, Amber.</div>
+                <button class="view-details" onclick="showDetails('Tom Ford Noir', 'A sophisticated and sensual fragrance.', '100ml', 'Eau de Parfum', 'Bergamot, Violet Flower, Amber.', '../source/images/tom_ford_noir.jpg')">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../source/images/tom_ford_oud.jpg" alt="Tom Ford Oud">
+            <div class="product-details">
+                <div class="product-name">Tom Ford Oud</div>
+                <div class="product-description">An intense and exotic oud fragrance.</div>
+                <div class="product-size">Size: 100ml</div>
+                <div class="product-type">Type: Eau de Parfum</div>
+                <div class="product-notes">Fragrance Notes: Oud, Rose, Spices.</div>
+                <button class="view-details" onclick="showDetails('Tom Ford Oud', 'An intense and exotic oud fragrance.', '100ml', 'Eau de Parfum', 'Oud, Rose, Spices.', '../source/images/tom_ford_oud.jpg')">View Details</button>
+            </div>
+        </div>
+    </div>
+
+ <!-- Modal for displaying details -->
+ <div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalProductName"></h2>
+        <img id="modalProductImage" src="" alt="Product Image">
+        <p><strong>Description:</strong> <span id="modalProductDescription"></span></p>
+        <p><strong>Size:</strong> <span id="modalProductSize"></span></p>
+        <p><strong>Type:</strong> <span id="modalProductType"></span></p>
+        <p><strong>Fragrance Notes:</strong> <span id="modalProductNotes"></span></p>
+    </div>
+</div>
+
+    <!-- <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SaffCoz. All rights reserved.</p>
+        </div>
+    </footer> -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Explore the essence of elegance and charm with SaffCoz, where every fragrance tells a story.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SaffCoz. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank"><img src="../source/icons/facebook-color-svgrepo-com.svg" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../source/icons/instagram-1-svgrepo-com.svg" alt="Instagram" class="social-icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../source/icons/twitter-color-svgrepo-com.svg" alt="Twitter" class="social-icon"></a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script> 
+
+</body>
+</html>

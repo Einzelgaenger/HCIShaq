@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaffCoz - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <span>S</span>
+            <span>a</span>
+            <span>f</span>
+            <span>f</span>
+            <span>C</span>
+            <span>o</span>
+            <span>z</span>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="all.html">All</a></li>
+                    <li><a href="newest.html">Newest</a></li>
+                    <li><a href="discounted.html">Discounted</a></li>
+                    <li><a href="best.html">Best Seller</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="store.html">Stores</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <img src="../source/images/dior_sauvage.jpg" alt="Dior Sauvage">
+            <div class="text">
+                <a href="newest.html">Newest Perfume</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="../source/images/chanel_no5.jpg" alt="Chanel No. 5">
+            <div class="text">
+                <a href="discounted.html">Discounted Perfume</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="../source/images/Creed_Aventus.jpg" alt="Creed Aventus">
+            <div class="text">
+                <a href="best.html">Best Seller Perfume</a>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About SaffCoz</h2>
+        <p>At SaffCoz, we believe that every fragrance tells a story. Our collection features high-quality perfumes designed to create unforgettable moments.</p>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="../source/images/dior_sauvage.jpg" alt="Dior Sauvage">
+                <h3>Dior Sauvage</h3>
+                <p>A fresh and spicy fragrance for the modern man.</p>
+                <a href="product.html" class="btn">View Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../source/images/chanel_no5.jpg" alt="Chanel No. 5">
+                <h3>Chanel No. 5</h3>
+                <p>The iconic fragrance that embodies femininity.</p>
+                <a href="product.html" class="btn">View Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../source/images/Creed_Aventus.jpg" alt="Creed Aventus">
+                <h3>Creed Aventus</h3>
+                <p>A fragrance inspired by strength and success.</p>
+                <a href="product.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            <p>"SaffCoz has an amazing collection of perfumes! I absolutely love Dior Sauvage."</p>
+            <cite>- Loyal Customer</cite>
+        </blockquote>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h2>Latest Articles</h2>
+        <div class="blog-post">
+            <h3><a href="article.html">5 Tips for Choosing the Right Perfume</a></h3>
+            <p>Learn how to select a fragrance that suits your personality...</p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Explore the essence of elegance and charm with SaffCoz, where every fragrance tells a story.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SaffCoz. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank"><img src="../source/icons/facebook-color-svgrepo-com.svg" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../source/icons/instagram-1-svgrepo-com.svg" alt="Instagram" class="social-icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../source/icons/twitter-color-svgrepo-com.svg" alt="Twitter" class="social-icon"></a>
+            </p>
+        </div>
+    </footer>
+    
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

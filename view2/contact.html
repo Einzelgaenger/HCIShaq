@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaffCoz - Contact Us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">SaffCoz</div>
+        <ul class="navbar-menu">
+            <li><a href="home.html"><img src="../source/icons/home-svgrepo-com.svg" class="menu-icon"> Home</a></li>
+            <li class="dropdown">
+                <a href="#"><img src="../source/icons/perfume-2-svgrepo-com.svg" alt="Products" class="menu-icon"> Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="all.html">All</a></li>
+                    <li><a href="newest.html">Newest</a></li>
+                    <li><a href="discounted.html">Discounted</a></li>
+                    <li><a href="best.html">Best Seller</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html"><img src="../source/icons/about-filled-svgrepo-com.svg" alt="About" class="menu-icon"> About</a></li>
+            <li><a href="store.html"><img src="../source/icons/store-svgrepo-com.svg" alt="Stores" class="menu-icon"> Stores</a></li>
+            <li><a href="contact.html"><img src="../source/icons/contact-book-svgrepo-com.svg" alt="Contact" class="menu-icon"> Contact</a></li>
+        </ul>
+    </nav>
+
+
+        <section class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" required>
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                    <div class="error" id="phoneError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="error" id="genderError"></div>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="news" required> Subscribe to our newsletter
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+
+
+    <script src="../js/script.js"></script> 
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Explore the essence of elegance and charm with SaffCoz, where every fragrance tells a story.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SaffCoz. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank"><img src="../source/icons/facebook-color-svgrepo-com.svg" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../source/icons/instagram-1-svgrepo-com.svg" alt="Instagram" class="social-icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../source/icons/twitter-color-svgrepo-com.svg" alt="Twitter" class="social-icon"></a>
+            </p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
