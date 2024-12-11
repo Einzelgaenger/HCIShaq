@@ -34,6 +34,13 @@ body {
     color: #ff6f61; /* Hover color */
 }
 
+/* Navbar Wrapper Styles */
+.navbar-wrapper {
+    background: linear-gradient(to right, #f8cdda, #1d2b64); /* Gradient background */
+    padding: 10px 0; /* Padding for top and bottom */
+    border-radius: 10px; /* Rounded corners */
+}
+
 /* Navbar Menu Styles */
 .navbar-menu {
     list-style: none;
@@ -48,7 +55,7 @@ body {
 
 .navbar-menu a {
     text-decoration: none;
-    color: #1d2b64; /* Navbar link color */
+    color: #ffffff; /* Change link color to white */
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 5px;
@@ -99,6 +106,9 @@ body {
     background-color: #ff6f61; /* Background color on hover */
     color: #ffffff; /* Text color on hover */
 }
+
+
+
 
 /* Navbar Brand Styles */
 .navbar-brand {
@@ -529,12 +539,12 @@ button:hover {
     background-color: #0056b3;
 }
 
-small.error-message {
-    font-size: 14px;
+.error {
     color: red;
-    margin-top: -10px;
-    margin-bottom: 5px;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
+
 
 input[type="checkbox"] {
     margin-right: 10px;
