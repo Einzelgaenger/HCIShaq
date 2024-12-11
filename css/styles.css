@@ -156,14 +156,16 @@ body {
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
-    width: 400px; /* Fixed width */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width for larger screens */
     height: 400px; /* Fixed height */
-    margin: auto; /* Center the slideshow */
+    margin: 20px auto; /* Center the slideshow and add space above */
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slideshow shadow */
 }
+
 
 /* Slide Styles */
 .slide {
@@ -717,4 +719,69 @@ section {
 .scent-text strong {
     color: #f39c12;
     font-weight: bold;
+}
+
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 2rem;
+    background: linear-gradient(to right, #ADD8E6, #20B2AA);
+
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem auto; /* Center the section */
+    max-width: 800px; /* Max width for the section */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column; /* Stack testimonials vertically */
+    gap: 1.5rem; /* Space between testimonials */
+}
+
+.testimonial {
+    display: flex; /* Flexbox for alignment */
+    align-items: flex-start; /* Align items to the start */
+    background-color: #ffffff; /* White background for testimonials */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the testimonial */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    position: relative; /* For pseudo-element positioning */
+}
+
+.user-image {
+    width: 40px; /* Fixed width for user images */
+    height: 40px; /* Fixed height for user images */
+    border-radius: 50%; /* Circular images */
+    margin-right: 15px; /* Space between image and text */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.testimonial-content {
+    flex: 1; /* Allow content to take remaining space */
+}
+
+.testimonial-content p {
+    font-size: 16px; /* Font size for testimonial text */
+    color: #333; /* Dark text color */
+    margin-bottom: 5px; /* Space below the text */
+}
+
+.testimonial-content cite {
+    font-size: 14px; /* Smaller font size for the name */
+    color: #777; /* Lighter color for the name */
+    font-style: italic; /* Italic style for the name */
+}
+
+/* Chat Bubble Effect */
+.testimonial::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -10px; /* Adjust to create the bubble effect */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #ffffff; /* Match the background color */
+    border-bottom: 10px solid transparent;
 }
