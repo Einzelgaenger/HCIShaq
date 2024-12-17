@@ -1,0 +1,245 @@
+/* About Page Styles */
+.hero-header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-header img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history {
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.history-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.history-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-text {
+    flex: 1;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.history-text p {
+    margin-bottom: 1.2rem;
+}
+
+.history-text strong {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.vision-mission {
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission-content {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.vision,
+.mission {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vision h3,
+.mission h3 {
+    font-size: 1.5rem;
+    color: #f39c12;
+}
+
+.vision p,
+.mission ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.mission ul {
+    padding-left: 20px;
+}
+
+.scents-gallery {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.scent-item {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+.scent-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scent-text {
+    flex: 1;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.scent-text p {
+    margin-bottom: 1.2rem;
+}
+
+.scent-text strong {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+    .hero-header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        max-width: 100%;
+    }
+
+    .history {
+        padding: 2rem;
+    }
+
+    .section-header {
+        font-size: 1.5rem;
+    }
+
+    .history-content {
+        gap: 1rem;
+    }
+
+    .history-image {
+        max-width: 100%;
+    }
+
+    .history-text {
+        font-size: 1rem;
+    }
+
+    .history-text p {
+        margin-bottom: 1rem;
+    }
+
+    .vision-mission {
+        padding: 2rem;
+    }
+
+    .vision-mission-content {
+        gap: 1rem;
+    }
+
+    .vision,
+    .mission {
+        flex: 1;
+        padding: 1.5rem;
+    }
+
+    .vision h3,
+    .mission h3 {
+        font-size: 1.2rem;
+    }
+
+    .vision p,
+    .mission ul {
+        font-size: 0.9rem;
+    }
+
+    .scents-gallery {
+        gap: 1rem;
+    }
+
+    .scent-item {
+        min-width: 100%;
+    }
+
+    .scent-text {
+        font-size: 0.9rem;
+    }
+
+    .scent-text p {
+        margin-bottom: 0.8rem;
+    }
+}

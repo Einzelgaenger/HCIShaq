@@ -1,0 +1,179 @@
+/* Product Card Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+    padding: 20px; /* Space around the cards */
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px; /* Fixed width for the card */
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.product-card img {
+    width: 100%; /* Responsive image */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.product-details {
+    padding: 15px; /* Space inside the card */
+    text-align: center; /* Centered text */
+    flex: 1; /* Allow details to take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between details */
+}
+
+.product-name {
+    font-size: 20px; /* Font size for product name */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+.product-description, .product-size, .product-type, .product-notes {
+    margin: 5px 0; /* Space between details */
+}
+
+.product-description {
+    font-size: 14px; /* Font size for description */
+    color: #555; /* Darker grey for description */
+}
+
+.product-size, .product-type, .product-notes {
+    font-size: 12px; /* Smaller font size for details */
+    color: #777; /* Lighter grey for other details */
+}
+
+.view-details {
+    background-color: #333; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.view-details:hover {
+    background-color: #FF5733; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.view-details:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    text-decoration: none;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.modal-content p strong {
+    color: #333;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for Product Cards */
+@media (max-width: 768px) {
+    .product-container {
+        justify-content: center; /* Center cards on smaller screens */
+    }
+
+    .product-card {
+        width: 90%; /* Full width for smaller screens */
+        margin: 10px; /* Reduced margin */
+    }
+
+    .product-card img {
+        height: 150px; /* Adjusted height for smaller screens */
+    }
+
+    .product-name {
+        font-size: 18px; /* Smaller font size for product name */
+    }
+
+    .product-description {
+        font-size: 12px; /* Smaller font size for description */
+    }
+
+    .product-size, .product-type, .product-notes {
+        font-size: 10px; /* Smaller font size for details */
+    }
+
+    .view-details {
+        padding: 10px 20px; /* Smaller padding for button */
+        font-size: 12px; /* Smaller font size for button */
+    }
+}

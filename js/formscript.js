@@ -49,13 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Function to validate Checkbox
-    function validateCheckbox() {
-        const newsCheckbox = document.getElementById('news');
-        const newsError = document.getElementById('newsError');
-        newsError.innerText = ''; // Clear previous error
-        if (!newsCheckbox.checked) {
-            newsError.innerText = 'You must subscribe to the newsletter.';
+
+    // Function to validate Message
+    function validateMessage() {
+        const message = document.getElementById('message').value;
+        const messageError = document.getElementById('messageError');
+        messageError.innerText = ''; // Clear previous error
+        if (message.trim() === '') {
+            messageError.innerText = 'Message is required.';
+        } else if (message.length < 10) {
+            messageError.innerText = 'Message must be at least 10 characters long.';
         }
     }
 
@@ -64,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('email').addEventListener('input', validateEmail);
     document.getElementById('phone').addEventListener('input', validatePhone);
     document.getElementById('gender').addEventListener('change', validateGender);
-    document.getElementById('news').addEventListener('change', validateCheckbox);
+    document.getElementById('message').addEventListener('input', validateMessage);
 
     // Handle form submission
     form.addEventListener('submit', function(event) {
@@ -78,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         validateEmail();
         validatePhone();
         validateGender();
-        validateCheckbox();
+        validateMessage(); // Validate message
 
         // Check if there are any errors
         const errors = document.querySelectorAll('.error');
